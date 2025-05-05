@@ -1,5 +1,6 @@
 <?php
 include_once("connection.php");
+include_once("function.php");
 
 if (!isset($_SESSION["user_id"])) {
     header("Location: login.php");
@@ -27,6 +28,7 @@ echo "<img src='uploads/" . $user['profile_picture'] . "' width='100' height='10
     | <a href="manage_users.php">Manage Users</a>
 <?php endif; ?>|
         <a href="changepassword.php">Change Password</a> |
+        <a href="update-profile.php">Update Profile</a> |
         <a href="logout.php">Logout</a>
     </nav>
     <div style="background-color:#e0e0e0; padding:10px;">
